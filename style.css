@@ -44,7 +44,7 @@
 
 .image-generator {
     height: 60vh;
-    background: url("images/bg.jpg");
+    background: url("images/bg.png");
     background-size: cover;
     align-items: center;
     position: relative;
@@ -190,7 +190,7 @@
 
 span {
     color: red;
-    font-style: italic;
+    font-style: oblique;
 }
 
 .footer-content {
@@ -203,7 +203,7 @@ span {
     height: 10%;
     color: #f2f2f2;
     margin: 0;
-    padding: 20px;
+    padding: 2% 5% 2% 5%;
 }
 
 @media screen and (max-width: 760px) {
@@ -249,14 +249,17 @@ span {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 540px) {
     .image-gallery .img-card {
         width: 100%;
     }
 
     .footer-content {
         display: flex;
-        padding: 1px;
+        padding: 1%;
+        height: 20%;
+        padding-bottom: 8%;
+
     }
 
     .footer-content .bio-name {
@@ -264,19 +267,71 @@ span {
         position: absolute;
         margin-top: -30px;
         margin-left: 20%;
-
     }
 
     .footer-content .reserve {
         position: absolute;
-        margin-top: 30px;
+        margin-top: 10%;
+        margin-left: 28%;
+        font-size: 1.2rem;
+    }
+
+    .footer-content .copyright {
+        position: absolute;
+        margin-top: 25%;
         margin-left: 28%;
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and ((max-width: 640px)) {
     .image-gallery .img-card {
         width: 100%;
+    }
+
+    .footer-content {
+        display: flex;
+        padding: 1% 1% 6% 1%;
+        height: 20%;
+        padding-bottom: 8%;
+    }
+
+    .footer-content .reserve {
+        position: absolute;
+        margin-bottom: 2%;
+        margin-left: 25%;
+        font-size: 1.2rem;
+    }
+
+    .footer-content .copyright {
+        position: absolute;
+        margin-top: 22%;
+        margin-left: 2fr;
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and ((max-width: 320px)) {
+    .footer-content {
+        display: flex;
+        padding: 1%;
+        height: 20%;
+        padding-bottom: 8%;
+
+    }
+
+    .footer-content .reserve {
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 20%;
+        font-size: 1.2rem;
+    }
+
+    .footer-content .copyright {
+        position: absolute;
+        margin-top: 23%;
+        margin-left: 23%;
+        font-size: 1.2rem;
     }
 }

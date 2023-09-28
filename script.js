@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const OPENAI_API_KEY = "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";
+const OPENAI_API_KEY = "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";
 let isImageGenerating = false;
 
 const updateImageCard = (imgDataArray) => {
